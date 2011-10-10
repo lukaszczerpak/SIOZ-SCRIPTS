@@ -4,7 +4,7 @@
 // @version    0.1
 // @description  udoskonalenie formularza wyszukiwania
 // @include    https://sioz.softnet.com.pl/firma/main.php?mode=archiwum*
-// @require    http://ajax.googleapis.com/ajax/libs/jquery/1.6.5/jquery.min.js
+// @require    http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
 // @require    http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js
 // @copyright  2011+, Łukasz Czerpak
 // ==/UserScript==
