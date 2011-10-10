@@ -7,3 +7,6 @@ https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-rfc.user.j
 
 Podczas wpisywania notatki, po zaznaczeniu checkbox-a RFC do pola edycyjnego wprowadzany jest szablon RFC. Wkrótce ten szablon zostanie uzupełniony wg wskazań Pawła, tymczasowo jest jego prostsza akceptowalna forma.
 
+https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-wyszukiwanie-zgloszen.user.js
+
+Usprawnienia na widoku wyszukiwania. Podczas wybierania kryteriów lub wpisywania wartości automatycznie aktywują się pola wyboru filtra dla wpisanej wartości.
