@@ -10,11 +10,11 @@
 
 function applyOnChange(valueFieldname, includeFieldname)
 {
-    $("input[name=" + valueFieldname + "]").focusin(function() {
+    $("input[name=" + valueFieldname + "]").focus(function() {
         var value = $("input[name=" + valueFieldname + "]").val();
         $("input[name=" + includeFieldname + "]").attr('checked', true);
     });
-    $("input[name=" + valueFieldname + "]").focusout(function() {
+    $("input[name=" + valueFieldname + "]").blur(function() {
         var value = $("input[name=" + valueFieldname + "]").val();
         $("input[name=" + includeFieldname + "]").attr('checked', value.length != 0);
     });
