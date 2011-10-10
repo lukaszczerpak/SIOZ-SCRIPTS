@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name       SIOZ-WYSZUKIWANIE-ZGLOSZEN
 // @namespace  https://sioz.softnet.com.pl/
-// @version    0.1
+// @version    0.2
 // @description  udoskonalenie formularza wyszukiwania
 // @include    https://sioz.softnet.com.pl/firma/main.php?mode=archiwum*
 // @require    http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
-// @require    http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js
 // @copyright  2011+, Łukasz Czerpak
 // ==/UserScript==
 
@@ -44,6 +43,4 @@ applyOnSelect('naz_system', 'system');
 applyOnSelect('id_osoby', 'kier');
 applyOnChange('od', 'zakres');
 applyOnChange('do', 'zakres');
-$("input[name=od]" ).datepicker({ dateFormat: 'yy-mm-dd' });
-$("input[name=do]" ).datepicker({ dateFormat: 'yy-mm-dd' });
 applyOnChange2('nr_zglosz', 'method', 2);
