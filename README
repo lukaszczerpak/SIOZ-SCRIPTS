@@ -1,0 +1,9 @@
+https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-czas.user.js
+
+Zmiany sposobu podawania czasu w SIOZ. Pole edycyjne, gdzie czas wpisywane jest z separatorem dziesiętnym zamieniane jest na dwa pola do wpisania ilości godzin i ilości minut. Na podstawie wpisywanych wartości automatycznie przeliczane jest pole z wartością z separatorem dziesiętnym.
+
+
+https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-rfc.user.js
+
+Podczas wpisywania notatki, po zaznaczeniu checkbox-a RFC do pola edycyjnego wprowadzany jest szablon RFC. Wkrótce ten szablon zostanie uzupełniony wg wskazań Pawła, tymczasowo jest jego prostsza akceptowalna forma.
+
