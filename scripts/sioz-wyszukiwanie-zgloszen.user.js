@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       SIOZ-WYSZUKIWANIE-ZGLOSZEN
 // @namespace  https://sioz.softnet.com.pl/
-// @version    0.3
+// @version    0.4
 // @description  udoskonalenie formularza wyszukiwania
 // @include    https://sioz.softnet.com.pl/firma/main.php?mode=archiwum*
 // @require    http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
