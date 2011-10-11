@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           SIOZ-CZAS
-// @version    0.1
+// @version    0.2
 // @namespace      http://sioz.softnet.pl/
 // @include        https://sioz.softnet.com.pl/firma/main.php*
 // @include        https://sioz.softnet.com.pl/firma/notka_w.php*
@@ -11,7 +11,7 @@
 function applyCzasMod(fieldName) {
     var czasField = $('input[name=' + fieldName + ']');
     
-    czasField.attr('disabled', true);
+    czasField.attr('readonly', true);
     czasField.after('&nbsp;&nbsp;&nbsp;Godziny: <input type="text" name="' + fieldName + 'H" value="0" size="6">\
 Minuty: <input type="text" name="' + fieldName + 'M" value="0" size="6">');
     
