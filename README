@@ -10,3 +10,8 @@ Podczas wpisywania notatki, po zaznaczeniu checkbox-a RFC do pola edycyjnego wpr
 https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-wyszukiwanie-zgloszen.user.js
 
 Usprawnienia na widoku wyszukiwania. Podczas wybierania kryteriów lub wpisywania wartości automatycznie aktywują się pola wyboru filtra dla wpisanej wartości.
+
+https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-przek-zglosz.user.js
+
+Skrypt usprawniający formularz przekazywania zgłoszeń.
+Wybranie osoby do przekazania lub działu z pola wyboru aktywuje odpowiadającą opcję przekazania.
