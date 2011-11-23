@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           SIOZ-CZAS
-// @version    0.2
+// @version    0.3
 // @namespace      http://sioz.softnet.pl/
 // @include        https://sioz.softnet.com.pl/firma/main.php*
 // @include        https://sioz.softnet.com.pl/firma/notka_w.php*
@@ -33,6 +33,10 @@ Minuty: <input type="text" name="' + fieldName + 'M" value="0" size="6">');
 
 if($('input[name=czas]').length > 0) {
     applyCzasMod('czas');
+}
+
+if($('input[name=czasp]').length > 0) {
+    applyCzasMod('czasp');
 }
 
 if($('input[name=czas_b]').length > 0) {
