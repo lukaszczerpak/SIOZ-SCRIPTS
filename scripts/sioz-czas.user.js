@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           SIOZ-CZAS
-// @version    0.3
+// @version    0.4
 // @namespace      http://sioz.softnet.pl/
 // @include        https://sioz.softnet.com.pl/firma/main.php*
 // @include        https://sioz.softnet.com.pl/firma/notka_w.php*
@@ -8,7 +8,7 @@
 // @copyright  2011+, Łukasz Czerpak
 // ==/UserScript==
 
-function applyCzasMod(fieldName) {
+function applyCzasMod($, fieldName) {
     var czasField = $('input[name=' + fieldName + ']');
     
     czasField.attr('readonly', true);
@@ -31,18 +31,34 @@ Minuty: <input type="text" name="' + fieldName + 'M" value="0" size="6">');
     });
 }
 
-if($('input[name=czas]').length > 0) {
-    applyCzasMod('czas');
-}
+(function(){
+  //boilerplate greasemonkey to wait until jQuery is defined...
+  function GM_wait()
+  {
+    if(typeof unsafeWindow.jQuery == 'undefined')
+      window.setTimeout(GM_wait,100);
+    else
+      unsafeWindow.jQuery(function() { letsJQuery(unsafeWindow.jQuery); });
+  }
+  GM_wait();
 
-if($('input[name=czasp]').length > 0) {
-    applyCzasMod('czasp');
-}
+  function letsJQuery($)
+  {
+	if($('input[name=czas]').length > 0) {
+		applyCzasMod($, 'czas');
+	}
 
-if($('input[name=czas_b]').length > 0) {
-    applyCzasMod('czas_b');
-}
+	if($('input[name=czasp]').length > 0) {
+		applyCzasMod($, 'czasp');
+	}
 
-if($('input[name=czas_z]').length > 0) {
-    applyCzasMod('czas_z');
-}
+	if($('input[name=czas_b]').length > 0) {
+		applyCzasMod($, 'czas_b');
+	}
+
+	if($('input[name=czas_z]').length > 0) {
+		applyCzasMod($, 'czas_z');
+	}
+  }
+})();
+
