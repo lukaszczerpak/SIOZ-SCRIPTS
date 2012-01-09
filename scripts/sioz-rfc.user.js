@@ -1,25 +1,14 @@
 // ==UserScript==
 // @name           SIOZ-RFC
-// @version    0.2
+// @version    0.4
 // @namespace      http://sioz.softnet.pl/
 // @include        https://sioz.softnet.com.pl/firma/notka_w.php*
 // @require        http://code.jquery.com/jquery-1.6.4.min.js  
 // @copyright  2011+, Łukasz Czerpak
 // ==/UserScript==
 
-(function(){
-  //boilerplate greasemonkey to wait until jQuery is defined...
-  function GM_wait()
-  {
-    if(typeof unsafeWindow.jQuery == 'undefined')
-      window.setTimeout(GM_wait,100);
-    else
-      unsafeWindow.jQuery(function() { letsJQuery(unsafeWindow.jQuery); });
-  }
-  GM_wait();
-
-  function letsJQuery($)
-  {
+$(document).ready(function() 
+{
 	$('input[name=rfc]').click(function ()
 							 {
 								 var thisCheck = $(this);
@@ -45,6 +34,5 @@ brak wpływu\n\
 								 }
 								 $('textarea[name=notka]').attr('value', v);
 							 });
-  }
-})();
+});
 
