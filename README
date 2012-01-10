@@ -15,3 +15,8 @@ https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-przek-zglo
 
 Skrypt usprawniający formularz przekazywania zgłoszeń.
 Wybranie osoby do przekazania lub działu z pola wyboru aktywuje odpowiadającą opcję przekazania.
+
+https://github.com/lukaszczerpak/SIOZ-SCRIPTS/raw/master/scripts/sioz-zatwierdz-zmiane.user.js
+
+Skrypt usprawniający formularz zatwierdzania zmiany.
+Pozwala na wybor elementow konfiguracji z listy i automatycznie umieszcza wybrane pozycje w polu tesktowym.
