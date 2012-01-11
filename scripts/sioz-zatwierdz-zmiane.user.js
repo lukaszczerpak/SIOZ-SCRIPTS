@@ -24,18 +24,13 @@ $(document).ready(function()
 {
     var fieldName = 'cmdb';
     var cmdbField = $('input[name=' + fieldName + ']');
-    
-    cmdbField.attr('readonly', true);
-    cmdbField.after('<br/><select id="cmdb-select" multiple="multiple">\
-<option value="P11/321">P11/321 - jakis element konfiguracji 1</option>\
-<option value="P11/322">P11/322 - jakis element konfiguracji 2</option>\
-<option value="P11/323">P11/323 - jakis element konfiguracji 3</option>\
-</select>');
-    $('#cmdb-select').dropdownchecklist({ icon: {}, textFormatFunction: function(options) {
-        var selectedOptions = options.filter(":selected");
-        arr = selectedOptions.map(function() { return $(this).val(); }).get();
-        cmdbField.val(arr.join(", "));
-        return "Wybierz...";
-    } });	
+    $.get('https://sioz.softnet.com.pl/firma/info_arch.php?mode=get_file&file_id=7687&id=89956', function(data) {
+        cmdbField.after('<br/>' + data);
+        $('#cmdb-select').dropdownchecklist({ icon: {}, textFormatFunction: function(options) {
+            var selectedOptions = options.filter(":selected");
+            arr = selectedOptions.map(function() { return $(this).val(); }).get();
+            cmdbField.val(arr.join(", "));
+            return "Wybierz...";
+        } });	
+    });
 });
-
